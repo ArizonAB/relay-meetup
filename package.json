@@ -1,0 +1,40 @@
+{
+  "name": "relay-meetup",
+  "version": "1.0.0",
+  "author": "Gabriel Nordeborn <gabriel.nordeborn@arizon.se>",
+  "license": "Apache License 2.0",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "2.3.0",
+    "@tailwindcss/typography": "0.2.0",
+    "@zeit/next-css": "1.0.1",
+    "gentype": "^3.6.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "9.5.2",
+    "next-transpile-modules": "4.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "reason-react": "^0.7.0",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "bsb -clean-world -make-world && next build",
+    "now-build": "bsb -clean-world -make-world && next build",
+    "preexport": "npm run build",
+    "export": "next export",
+    "prestart": "npm run export",
+    "start": "serve out",
+    "bs:build": "bsb -make-world",
+    "bs:clean": "bsb -clean-world",
+    "bs:start": "bsb -make-world -w"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "bs-platform": "8.2.0",
+    "bs-webapi": "^0.18.0",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1",
+    "postcss-easy-import": "^3.0.0",
+    "tailwindcss": "1.7.6"
+  }
+}

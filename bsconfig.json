@@ -1,0 +1,33 @@
+{
+  "name": "nextjs-default",
+  "namespace": false,
+  "reason": { "react-jsx": 3 },
+  "refmt": 3,
+  "bs-dependencies": ["reason-react", "bs-webapi"],
+  "ppx-flags": [],
+  "sources": [
+    { "dir": "common" },
+    { "dir": "bindings" },
+    {
+      "dir": "pages",
+      "subdirs": true
+    },
+    { "dir": "components", "subdirs": true },
+    {
+      "dir": "styles",
+      "subdirs": true
+    },
+    "layouts"
+  ],
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bsc-flags": ["-bs-no-version-header", "-bs-super-errors", "-bs-g"],
+  "gentypeconfig": {
+    "language": "untyped",
+    "shims": [],
+    "module": "es6"
+  }
+}

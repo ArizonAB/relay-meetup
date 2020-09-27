@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Hurme Geometric Sans";
+  src: url("/static/fonts/HurmeGeometricSans2-SemiBold.eot");
+  src: url("/static/fonts/HurmeGeometricSans2-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/static/fonts/HurmeGeometricSans2-SemiBold.woff2") format("woff2"),
+    url("/static/fonts/HurmeGeometricSans2-SemiBold.woff") format("woff"),
+    url("/static/fonts/HurmeGeometricSans2-SemiBold.ttf") format("truetype"),
+    url("/static/fonts/HurmeGeometricSans2-SemiBold.svg#HurmeGeometricSans3-SemiBold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/static/fonts/OpenSans-Italic.woff2") format("woff2"),
+    url("/static/fonts/OpenSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/static/fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("/static/fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/static/fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("/static/fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
