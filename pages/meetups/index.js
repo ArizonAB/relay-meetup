@@ -1,3 +1,3 @@
-var MeetupsIndex = require("./MeetupsIndex.bs").make;
+var MeetupsIndex = require("../../components/MeetupsIndex.bs").make;
 
 export default MeetupsIndex;
