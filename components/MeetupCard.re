@@ -18,7 +18,7 @@ let make = (~meetup: Types.meetupEvent) =>
           <h3 className="text-2xl"> {React.string(meetup.title)} </h3>
         </a>
       </Next.Link>
-      <div className="pt-2"> {meetup.desc} </div>
+      <div className="pt-2"> <RenderMarkdown source={meetup.desc} /> </div>
       <div className="pb-4 pt-2">
         <Next.Link href={"/meetups/" ++ meetup.slug}>
           <a

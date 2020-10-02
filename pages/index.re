@@ -57,11 +57,11 @@ let make = () =>
              )}
           </p>
           <h3 className="text-xl mt-6">
-            {React.string("A hands on theme")}
+            {React.string("A hands-on theme")}
           </h3>
           <p>
             {React.string(
-               {j|The second part of each meetup will focus on a particular aspect of using Relay as hands on as we can. Together with a panel of experienced Relay users, bringing invaluable industry expertise, we'll discuss best practices and surface valuable knowledge for solving the particular problem we're discussing.|j},
+               {j|The second part of each meetup will focus on a particular aspect of using Relay as hands-on as we can. Together with a panel of experienced Relay users, bringing invaluable industry expertise, we'll discuss best practices and surface valuable knowledge for solving the particular problem we're discussing.|j},
              )}
           </p>
         </div>

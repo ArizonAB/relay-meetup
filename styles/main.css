@@ -62,3 +62,8 @@ h6 {
 p {
   @apply mb-3;
 }
+
+.link,
+.md-container a {
+  @apply underline text-blue-500;
+}

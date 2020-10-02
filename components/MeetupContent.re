@@ -16,7 +16,7 @@ let make = (~meetup: Types.meetupEvent) => {
                 <h3 className="text-2xl">
                   panelDiscussion.topic->React.string
                 </h3>
-                <p> {React.string(panelDiscussion.desc)} </p>
+                <RenderMarkdown source={panelDiscussion.desc} />
               </div>
             </div>
             <div className="p-2 pt-6 bg-gray-100 border-t border-gray-300">
@@ -44,7 +44,7 @@ let make = (~meetup: Types.meetupEvent) => {
                 {React.string("Presentation")}
               </h2>
               <h3 className="text-2xl"> presentation.title->React.string </h3>
-              <p> {React.string(presentation.desc)} </p>
+              <RenderMarkdown source={presentation.desc} />
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@ let make = (~meetup: Types.meetupEvent) => {
                 {React.string("Interview")}
               </h2>
               <h3 className="text-2xl"> interview.topic->React.string </h3>
-              <p> {React.string(interview.desc)} </p>
+              <RenderMarkdown source={interview.desc} />
             </div>
           </div>
         </div>

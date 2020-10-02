@@ -19,7 +19,10 @@ let make = () =>
           </p>
           <p>
             {React.string({j|All themes are present as GitHub issues on |j})}
-            <a href="" className=Util.linkStyle>
+            <a
+              href="https://github.com/ArizonAB/relay-meetup/issues"
+              target="_blank"
+              className=Util.linkStyle>
               {React.string("the Relay Meetup GitHub repository")}
             </a>
             {React.string(
@@ -30,15 +33,16 @@ let make = () =>
         <div className="pt-4">
           <ul className="list-disc pl-6">
             {[|
+               {j|Thinking in Relay - the difference in mindset with Relay compared to other frameworks|j},
                {j|Relay and suspense + concurrent mode|j},
                {j|Caching in Relay - how does it work?|j},
                {j|Strategies for updating the store after mutations|j},
                {j|Adding Relay support to your server|j},
+               {j|Testing applications built with Relay|j},
                {j|The Node interface - how does it work and how can you leverage it|j},
                {j|Missing field handlers - teaching Relay about your schema to increase cache hits|j},
                {j|All things connections and pagination|j},
                {j|Server side rendering with Relay - what’s the current story?|j},
-               {j|Thinking in Relay - the difference in mindset with Relay compared to other frameworks|j},
                {j|Using Relay offline|j},
                {j|Client side state management in Relay|j},
                {j|The Relay compiler in depth - how does it work, what does it actually do, and what does it enable?|j},

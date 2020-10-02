@@ -21,7 +21,7 @@ let make = (~meetup: Types.meetupEvent) =>
         </div>
       </div>
       <div className="max-w-full md:max-w-2xl mx-auto md:mt-12 p-4 md:p-0">
-        <div className=""> {meetup.desc} </div>
+        <div className=""> <RenderMarkdown source={meetup.desc} /> </div>
         <div className="">
           <h2
             className="text-2xl md:text-4xl md:pt-12 pt-6 text-center md:text-left">

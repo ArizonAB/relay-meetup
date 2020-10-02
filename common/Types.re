@@ -43,7 +43,7 @@ type meetupEvent = {
   date,
   title: string,
   slug: string,
-  desc: React.element,
+  desc: string,
   meetupLink: option(string),
   content: array(content),
   hosts: array(participant),

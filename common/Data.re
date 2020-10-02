@@ -32,50 +32,20 @@ let meetup_2020_10_21 = {
     month: 9,
     day: 21,
     hour: 19,
-    minute: 0,
+    minute: 30,
   },
   title: {j|Relay in production at Artsy, and updating the cache after mutations|j},
   slug: "meetup_2020_10_21",
-  desc:
-    <>
-      <p>
-        {React.string(
-           {j|In our first meetup ever, we'll dive deep into the history of Relay at |j},
-         )}
-        <a href="https://www.artsy.net" target="_blank">
-          {React.string("Artsy")}
-        </a>
-        {React.string({j| with |j})}
-        <ParticipantLink
-          text={j|Eloy Durán|j}
-          participant=AllParticipants.alloy
-        />
-        {React.string(
-           {j|, formerly the Director of Engineering. We talk about Eloy's background, how Relay came to Artsy, onboarding new developers to Relay, and how the experience of using Relay at scale has been throughout the years.|j},
-         )}
-      </p>
-      <p>
-        {React.string(
-           {j|In our second segment of the meetup we'll dig into strategies for updating the cache after mutations in a panel discussion with |j},
-         )}
-        <ParticipantLink
-          participant=AllParticipants.kassens
-          text="Jan Kassens"
-        />
-        {React.string({j| from the Relay Core team at Facebook, and |j})}
-        <ParticipantLink participant=AllParticipants.alloy text="Eloy" />
-        {React.string(
-           {j| again. We'll discuss complex as well as simple scenarios, and what strategies have worked best in the long run for Facebook and Artsy.|j},
-         )}
-      </p>
-    </>,
+  desc: {j|In our first meetup ever, we'll dive deep into the history of Relay at [Artsy](https://www.artsy.net) with [Eloy Durán](https://twitter.com/alloy), formerly the Director of Engineering. We'll talk about Eloy's background, how Relay came to Artsy, onboarding new developers to Relay, and how the experience of using Relay at scale has been throughout the years.
+
+In our second segment of the meetup we'll dig into strategies for updating the cache after mutations in a panel discussion with [Jan Kassens](https://twitter.com/kassens) from the Relay Core team at Facebook, and Eloy again. We'll discuss complex as well as simple scenarios, and what strategies have worked best in the long run for Facebook and Artsy.|j},
   meetupLink: None,
   content: [|
     Interview({
       subject: AllParticipants.alloy,
       interviewer: AllParticipants.zth,
       topic: {|Relay at Artsy throughout the years|},
-      desc: {|In this chat with Eloy we talk about how Artsy adopted Relay, Eloy's experience onboarding new developers to Relay, and how the experience of working with Relay throughout the years has been.|},
+      desc: {|In this chat with [Eloy](https://twitter.com/alloy) we'll talk about how Artsy adopted Relay, Eloy's experience onboarding new developers to Relay, and how the experience of working with Relay throughout the years has been.|},
     }),
     PanelDiscussion({
       topic: "Updating the cache after mutations",

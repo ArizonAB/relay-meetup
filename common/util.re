@@ -3,7 +3,7 @@ module ReactStuff = {
   let ate = ReasonReact.array;
 };
 
-let linkStyle = "underline text-blue-500";
+let linkStyle = "link";
 
 let toTwoDigitStr = i =>
   switch (i) {
