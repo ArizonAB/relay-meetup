@@ -109,21 +109,13 @@ let make = () =>
           <div
             className="p-6 bg-white"
             style={ReactDOMRe.Style.make(~flex="2", ())}>
-            <p>
-              {React.string(
-                 {j|Hi! My name is Gabriel, and I host the Relay Meetup. I'm a big fan of Relay, and I've contributed to Relay and the Relay community in a number of ways throughout the years.|j},
-               )}
-            </p>
-            <p>
-              {React.string(
-                 {j|I'm also a partner at Arizon, an IT-consultancy in Stockholm, Sweden.|j},
-               )}
-            </p>
-            <p>
-              {React.string(
-                 {j|We love Relay at Arizon, and we want to give back to the Relay community somehow. That's why we decided to launch this meetup, to help provide a natural place for the Relay community to gather.|j},
-               )}
-            </p>
+            <RenderMarkdown
+              source={j|Hi! My name is Gabriel, and I host the Relay Meetup. I'm a long-time user of Relay, and I've been involved with Relay and the Relay community in various capacities throughout the years.
+
+I'm also a partner at [Arizon](https://arizon.se/consultancy), an IT-consultancy in Stockholm, Sweden.
+
+We love Relay at Arizon, and we want to give back to the Relay community somehow. That's why we decided to launch this meetup, to help provide a natural place for the Relay community to gather.|j}
+            />
           </div>
         </div>
       </div>
