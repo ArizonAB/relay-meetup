@@ -1,16 +1,36 @@
 [@react.component]
 let make =
-    (~meetup: Types.meetupEvent, ~showTitles=false, ~showAvatars=true, ()) => {
+    (
+      ~meetup: Types.meetupEvent,
+      ~showTitles=false,
+      ~showAvatars=true,
+      ~avatarSize,
+      ~align=`end_,
+      (),
+    ) => {
   let participants =
     React.useMemo1(() => meetup->Data.getParticipants, [|meetup|]);
 
   <div>
     {showAvatars
-       ? <div className="flex flex-row-reverse justify-end">
+       ? <div
+           className={
+             "flex flex-row-reverse "
+             ++ (
+               switch (align) {
+               | `end_ => "justify-end"
+               | `center => "justify-center"
+               }
+             )
+           }>
            {participants
             ->Belt.Array.reverse
             ->Belt.Array.map(participant =>
-                <ParticipantCondensed participant key={participant.handle} />
+                <ParticipantCondensed
+                  avatarSize
+                  participant
+                  key={participant.handle}
+                />
               )
             ->React.array}
          </div>

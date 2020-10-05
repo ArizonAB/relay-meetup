@@ -8,7 +8,7 @@ let make = (~meetup: Types.meetupEvent, ()) => {
       </div>
       <div className="md:ml-6 md:border-l border-gray-200">
         <div className="md:ml-8 md:pt-0 pt-6">
-          <CondensedParticipantsDisplayer meetup />
+          <CondensedParticipantsDisplayer avatarSize=`medium meetup />
         </div>
       </div>
     </div>

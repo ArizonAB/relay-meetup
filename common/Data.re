@@ -27,15 +27,15 @@ module AllParticipants = {
 };
 
 let meetup_2020_10_21 = {
+  id: "1",
   date: {
     year: 2020,
     month: 9,
     day: 21,
     hour: 19,
-    minute: 30,
+    minute: 0,
   },
   title: {j|Relay in production at Artsy, and updating the cache after mutations|j},
-  slug: "meetup_2020_10_21",
   desc: {j|In our first meetup ever, we'll dive deep into the history of Relay at [Artsy](https://www.artsy.net) with [Eloy Durán](https://twitter.com/alloy), formerly the Director of Engineering. We'll talk about Eloy's background, how Relay came to Artsy, onboarding new developers to Relay, and how the experience of using Relay at scale has been throughout the years.
 
 In our second segment of the meetup we'll dig into strategies for updating the cache after mutations in a panel discussion with [Jan Kassens](https://twitter.com/kassens) from the Relay Core team at Facebook, and Eloy again. We'll discuss simple as well as more complex scenarios, and what strategies have worked best in the long run for Facebook and Artsy - two very different applications.|j},

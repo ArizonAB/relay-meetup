@@ -89,6 +89,7 @@ module Router = {
     route: string,
     asPath: string,
     events: Events.t,
+    query: Js.Dict.t(string),
   };
 
   [@bs.module "next/router"] external useRouter: unit => router = "useRouter";

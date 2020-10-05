@@ -40,9 +40,9 @@ type date = {
 };
 
 type meetupEvent = {
+  id: string,
   date,
   title: string,
-  slug: string,
   desc: string,
   meetupLink: option(string),
   content: array(content),

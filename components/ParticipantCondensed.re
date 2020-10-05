@@ -1,5 +1,12 @@
+let getAvatarSize = avatarSize =>
+  switch (avatarSize) {
+  | `small => " w-8 h-8 "
+  | `medium => " w-16 h-16 "
+  | `large => " w-32 h-32 "
+  };
+
 [@react.component]
-let make = (~participant: Types.participant, ()) => {
+let make = (~participant: Types.participant, ~avatarSize=`medium, ()) => {
   let avatarUrl = participant.github ++ ".png";
 
   <div className="-mx-3">
@@ -9,7 +16,9 @@ let make = (~participant: Types.participant, ()) => {
       <img
         alt={participant.name}
         src=avatarUrl
-        className="rounded-full w-16 h-16 border border-gray-200"
+        className={
+          "rounded-full border border-gray-200 " ++ getAvatarSize(avatarSize)
+        }
       />
     </div>
   </div>;
