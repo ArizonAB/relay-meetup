@@ -19,7 +19,11 @@ let make = () => {
               {React.string(meetup.title)}
             </h1>
             <div className="mx-auto text-center mt-6">
-              <CondensedParticipantsDisplayer avatarSize=`large meetup />
+              <CondensedParticipantsDisplayer
+                align=`center
+                avatarSize=`large
+                meetup
+              />
             </div>
           </div>
         </div>
