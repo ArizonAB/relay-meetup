@@ -45,6 +45,7 @@ type meetupEvent = {
   title: string,
   desc: string,
   meetupLink: option(string),
+  youtubeLink: option(string),
   content: array(content),
   hosts: array(participant),
 };

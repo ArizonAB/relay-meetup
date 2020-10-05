@@ -24,7 +24,16 @@ let make = (~meetup: Types.meetupEvent) =>
           </div>
         </div>
       </div>
-      <div className="max-w-full md:max-w-2xl mx-auto md:mt-12 p-4 md:p-0">
+      <div className="max-w-full md:max-w-2xl mx-auto md:mt-6 p-4 md:p-0">
+        {switch (meetup.youtubeLink, meetup.meetupLink) {
+         | (Some(youtubeLink), Some(meetupLink)) =>
+           <div className="font-bold mb-4 border-b border-gray-300">
+             <RenderMarkdown
+               source={j|Check out the event on [YouTube]($youtubeLink) and [Meetup.com]($meetupLink).|j}
+             />
+           </div>
+         | _ => React.null
+         }}
         <div className=""> <RenderMarkdown source={meetup.desc} /> </div>
         <div className="">
           <h2
