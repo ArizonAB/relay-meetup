@@ -4,6 +4,10 @@ let make = (~meetup: Types.meetupEvent) =>
     <Next.Head>
       <title> {React.string("Relay Meetup | " ++ meetup.title)} </title>
       <meta name="description" content={meetup.title} />
+      <meta
+        name="og:image"
+        content={"/static/img/meetups/meetup_" ++ meetup.id ++ "_og.png"}
+      />
       <MeetupStructuredData meetup />
     </Next.Head>
     <div className="md:pb-32 md:p-0">
