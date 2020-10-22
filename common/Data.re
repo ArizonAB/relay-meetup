@@ -40,7 +40,7 @@ let meetup_2020_10_21 = {
 
 In our second segment of the meetup we'll dig into strategies for updating the cache after mutations in a panel discussion with [Jan Kassens](https://twitter.com/kassens) from the Relay Core team at Facebook, and Eloy again. We'll discuss simple as well as more complex scenarios, and what strategies have worked best in the long run for Facebook and Artsy - two very different applications.|j},
   meetupLink: Some("https://www.meetup.com/relay-meetup/events/273730799/"),
-  youtubeLink: Some("https://youtu.be/jdFVc28G_-A"),
+  youtubeLink: Some("https://www.youtube.com/watch?v=wLrityvveSQ"),
   content: [|
     Interview({
       subject: AllParticipants.alloy,
