@@ -7,6 +7,7 @@ let make = (~meetup: Types.meetupEvent) => {
            switch (c) {
            | Presentation(p) => Some(p)
            | PanelDiscussion(_)
+           | Showcase(_)
            | Interview(_) => None
            }
          )

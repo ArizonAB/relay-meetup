@@ -24,6 +24,22 @@ module AllParticipants = {
     handle: "zth",
     work: "Arizon Consulting",
   };
+
+  let robrichard = {
+    name: {|Rob Richard|},
+    twitter: Some("https://twitter.com/robrichard"),
+    github: "https://github.com/robrichard",
+    handle: "robrichard",
+    work: "1stdibs",
+  };
+
+  let sibelius = {
+    name: {|Sibelius Seraphini|},
+    twitter: Some("https://twitter.com/sibelius"),
+    github: "https://github.com/sibelius",
+    handle: "sibelius",
+    work: "Entria Tech",
+  };
 };
 
 let meetup_2020_10_21 = {
@@ -62,7 +78,42 @@ In our second segment of the meetup we'll dig into strategies for updating the c
   hosts: [|AllParticipants.zth|],
 };
 
-let meetups = [|meetup_2020_10_21|];
+let meetup_2020_12_03 = {
+  id: "2",
+  date: {
+    year: 2020,
+    month: 11,
+    day: 2,
+    hour: 19,
+    minute: 0,
+  },
+  title: {j|Learning Relay, and the @defer + @stream directives|j},
+  desc: {j|Join us for an evening of Relay! [Sibelius](https://twitter.com/sibelius), a well known face in the Relay community, will guide us through how we can use his Relay workshop to get started learning (and teaching!) Relay. Don't miss this if you're curious about Relay but don't know where to get started.
+
+We'll also have [Rob Richard](https://twitter.com/robrichard) from [1stdibs.com](https://1stdibs.com) come on and talk about the @defer and @stream directives that they've been championing bringing to the official GraphQL specification. We'll cover what those directives do, how you can use them with Relay, and how the work moving them forward in the specification has been.|j},
+  meetupLink: Some("https://www.meetup.com/relay-meetup/events/273730799/"),
+  youtubeLink: Some("https://www.youtube.com/watch?v=wLrityvveSQ"),
+  content: [|
+    Presentation({
+      presenter: AllParticipants.sibelius,
+      title: {|Getting started with Relay through the Relay Workshop|},
+      desc: {|[Sibelius](https://twitter.com/sibelius) has put together material for a workshop teaching you to use Relay. Join us as Sibelius walk us through how to use and get started with the workshop material.|},
+    }),
+    Showcase({
+      topic: "@defer and @stream",
+      desc: {|Rob Richard and 1stdibs.com has championed adding the @defer and @stream directives to the official GraphQL specification. In this session we'll talk about what @defer and @stream are, why they're useful, how you use them with Relay, and how you can help out in testing the new directives.|},
+      participants: [|
+        AllParticipants.robrichard,
+        AllParticipants.zth,
+        AllParticipants.sibelius,
+      |],
+    }),
+  |],
+
+  hosts: [|AllParticipants.zth|],
+};
+
+let meetups = [|meetup_2020_10_21, meetup_2020_12_03|];
 
 let getParticipants = meetup => {
   let participants: array(participant) = [||];
@@ -87,6 +138,7 @@ let getParticipants = meetup => {
       | Presentation({presenter}) =>
         let _ = participants->Js.Array2.push(presenter);
         ();
+      | Showcase({participants})
       | PanelDiscussion({participants}) =>
         participants->addParticipantsFromArray
       }

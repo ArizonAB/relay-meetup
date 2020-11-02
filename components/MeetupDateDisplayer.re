@@ -9,7 +9,10 @@ let make = (~meetup: Types.meetupEvent) => {
       <div
         className="flex flex-col leading-none pr-6 border-r border-gray-300 text-right md:text-left">
         <div className="text-4xl md:text-6xl font-bold">
-          {React.string(meetup.date.day->string_of_int)}
+          {React.string(
+             (meetup.date.day < 10 ? "0" : "")
+             ++ meetup.date.day->string_of_int,
+           )}
         </div>
         <div className="text-lg">
           {React.string(meetup.date.month->Data.dateToFull)}
