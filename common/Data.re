@@ -33,6 +33,14 @@ module AllParticipants = {
     work: "1stdibs",
   };
 
+  let lilianammatos = {
+    name: {|Liliana Matos|},
+    twitter: Some("https://twitter.com/lilianammmatos"),
+    github: "https://github.com/lilianammmatos",
+    handle: "lilianammmatos",
+    work: "1stdibs",
+  };
+
   let sibelius = {
     name: {|Sibelius Seraphini|},
     twitter: Some("https://twitter.com/sibelius"),
@@ -90,7 +98,7 @@ let meetup_2020_12_03 = {
   title: {j|Learning Relay, and the @defer + @stream directives|j},
   desc: {j|Join us for an evening of Relay! [Sibelius](https://twitter.com/sibelius), a well known face in the Relay community, will guide us through how we can use his Relay workshop to get started learning (and teaching!) Relay. Don't miss this if you're curious about Relay but don't know where to get started.
 
-We'll also have [Rob Richard](https://twitter.com/robrichard) from [1stdibs.com](https://1stdibs.com) come on and talk about the @defer and @stream directives that they've been championing bringing to the official GraphQL specification. We'll cover what those directives do, how you can use them with Relay, and how the work moving them forward in the specification has been.|j},
+We'll also have [Liliana Matos](https://github.com/lilianammmatos) and [Rob Richard](https://twitter.com/robrichard) from [1stdibs.com](https://1stdibs.com) come on and talk about the @defer and @stream directives that they've been championing bringing to the official GraphQL specification. We'll cover what those directives do, how you can use them with Relay, and how the work moving them forward in the specification has been.|j},
   meetupLink: Some("https://www.meetup.com/relay-meetup/events/273730799/"),
   youtubeLink: Some("https://www.youtube.com/watch?v=wLrityvveSQ"),
   content: [|
@@ -101,11 +109,11 @@ We'll also have [Rob Richard](https://twitter.com/robrichard) from [1stdibs.com]
     }),
     Showcase({
       topic: "@defer and @stream",
-      desc: {|Rob Richard and 1stdibs.com has championed adding the @defer and @stream directives to the official GraphQL specification. In this session we'll talk about what @defer and @stream are, why they're useful, how you use them with Relay, and how you can help out in testing the new directives.|},
+      desc: {|Liliana Matos and Rob Richard from 1stdibs.com has championed adding the @defer and @stream directives to the official GraphQL specification. In this session we'll talk about what @defer and @stream are, why they're useful, how you use them with Relay, and how you can help out in testing the new directives.|},
       participants: [|
+        AllParticipants.lilianammatos,
         AllParticipants.robrichard,
         AllParticipants.zth,
-        AllParticipants.sibelius,
       |],
     }),
   |],
