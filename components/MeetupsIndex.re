@@ -11,7 +11,7 @@ let make = () => {
         className="bg-gray-100 border-t border-b py-6 my-6 md:mt-12 border-gray-200 p-4 md:p-0 md:pt-4">
         <NextMeetup />
       </div>
-      <div className="max-w-full md:max-w-2xl md:mx-auto">
+      <div className="max-w-full md:max-w-2xl md:mx-auto p-4">
         {Data.meetups
          ->Belt.Array.keep(m => !Util.eventHasPassed(m.date))
          ->Belt.Array.map(meetup =>
