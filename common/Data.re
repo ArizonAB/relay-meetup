@@ -99,8 +99,8 @@ let meetup_2020_12_03 = {
   desc: {j|Join us for an evening of Relay! [Sibelius](https://twitter.com/sibelius), a well known face in the Relay community, will guide us through how we can use his Relay workshop to get started learning (and teaching!) Relay. Don't miss this if you're curious about Relay but don't know where to get started.
 
 We'll also have [Liliana Matos](https://github.com/lilianammmatos) and [Rob Richard](https://twitter.com/robrichard) from [1stdibs.com](https://1stdibs.com) come on and talk about the @defer and @stream directives that they've been championing bringing to the official GraphQL specification. We'll cover what those directives do, how you can use them with Relay, and how the work moving them forward in the specification has been.|j},
-  meetupLink: Some("https://www.meetup.com/relay-meetup/events/273730799/"),
-  youtubeLink: Some("https://www.youtube.com/watch?v=wLrityvveSQ"),
+  meetupLink: Some("https://www.meetup.com/relay-meetup/events/274367568/"),
+  youtubeLink: None,
   content: [|
     Presentation({
       presenter: AllParticipants.sibelius,
