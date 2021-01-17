@@ -24,6 +24,11 @@ let make = () =>
                {j| for any questions you might have about this meetup.|j},
              )}
           </p>
+          <p>
+            <RenderMarkdown
+              source={|There's also a [Discord for the meetup](https://discord.gg/ft5cJmz) that you can join if you'd like to chat or hang out before or after the meetups.|}
+            />
+          </p>
         </div>
       </div>
     </div>

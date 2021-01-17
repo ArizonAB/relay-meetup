@@ -14,6 +14,9 @@ let make = () => {
       <div className="max-w-full md:max-w-2xl md:mx-auto p-4">
         {Data.meetups
          ->Belt.Array.keep(m => !Util.eventHasPassed(m.date))
+         ->Js.Array2.sortInPlaceWith((m1, m2) =>
+             m1.date->Util.dateIsGreaterThan(m2.date) ? (-1) : 1
+           )
          ->Belt.Array.map(meetup =>
              <div key={meetup.id}> <MeetupCard meetup /> </div>
            )

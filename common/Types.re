@@ -28,6 +28,7 @@ type interview = {
 type content =
   | Presentation(presentation)
   | PanelDiscussion(discussion)
+  | Q_A(discussion)
   | Showcase(discussion)
   | Interview(interview);
 

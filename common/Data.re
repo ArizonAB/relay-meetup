@@ -110,7 +110,7 @@ We'll also have [Liliana Matos](https://github.com/lilianammmatos) and [Rob Rich
 
 [Joe Savona](https://github.com/josephsavona), from the Relay core team, will join us as well, giving his insight on how Facebook are using said directives.|j},
   meetupLink: Some("https://www.meetup.com/relay-meetup/events/274367568/"),
-  youtubeLink: None,
+  youtubeLink: Some("https://www.youtube.com/watch?v=5E5KdSU7Exs"),
   content: [|
     Presentation({
       presenter: AllParticipants.sibelius,
@@ -134,7 +134,33 @@ Joe Savona, from the Relay Core team at Facebook, will also be joining us for a 
   hosts: [|AllParticipants.zth|],
 };
 
-let meetups = [|meetup_2020_10_21, meetup_2020_12_03|];
+let meetup_2021_02_04 = {
+  id: "3",
+  date: {
+    year: 2021,
+    month: 1,
+    day: 4,
+    hour: 19,
+    minute: 0,
+  },
+  title: {j|Relay core team community Q&A|j},
+  desc: {j|On this meetup we're joined by [Joe Savona](https://github.com/josephsavona) from the Relay Core team, and we'll dedicate the entire meetup to a community Q&A.
+
+Got questions for the Q&A? Please [DM them to us on Twitter](https://twitter.com/RelayMeetup). Don't have Twitter? Join our [Discord](https://discord.gg/ft5cJmz) and PM me (Gabriel Nordeborn#8445) your questions there instead.|j},
+  meetupLink: Some("https://www.meetup.com/relay-meetup/events/274367568/"),
+  youtubeLink: None,
+  content: [|
+    Q_A({
+      participants: [|AllParticipants.josephsavona|],
+      topic: {|Community Q&A|},
+      desc: {|[Joe Savona](https://github.com/josephsavona) from the Relay core team at Facebook joins us for a Relay community Q&A.|},
+    }),
+  |],
+
+  hosts: [|AllParticipants.zth|],
+};
+
+let meetups = [|meetup_2020_10_21, meetup_2020_12_03, meetup_2021_02_04|];
 
 let getParticipants = meetup => {
   let participants: array(participant) = [||];
@@ -159,6 +185,7 @@ let getParticipants = meetup => {
       | Presentation({presenter}) =>
         let _ = participants->Js.Array2.push(presenter);
         ();
+      | Q_A({participants})
       | Showcase({participants})
       | PanelDiscussion({participants}) =>
         participants->addParticipantsFromArray
