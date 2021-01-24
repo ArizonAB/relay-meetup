@@ -144,7 +144,7 @@ let meetup_2021_02_04 = {
     minute: 0,
   },
   title: {j|Relay core team community Q&A|j},
-  desc: {j|This entire meetup is dedicated to a community Q&A with the Relay core team. We're joined by [Joe Savona](https://github.com/josephsavona) and a few more members of the Relay core team. Together we'll discuss and explore what the core team is up to and excited about in 2021. We'll also try and answer as many questions from the community as time allows.
+  desc: {j|This entire meetup is dedicated to a community Q&A with the Relay core team. We're joined by [Joe Savona](https://github.com/josephsavona) and a few more members of the team, and together we'll discuss and explore what the core team is up to and excited about in 2021. We'll also try and have as many questions from the community answered as time allows.
 
 Here's a list of things we'll cover:
 - The Relay hooks API going stable in H1 2021
@@ -155,7 +155,7 @@ Here's a list of things we'll cover:
 
 
 Got questions for the Q&A? Please [DM them to us on Twitter](https://twitter.com/RelayMeetup). Don't have Twitter? Join our [Discord](https://discord.gg/ft5cJmz) and PM me (Gabriel Nordeborn#8445) your questions there instead. We'll try and have as many questions as possible answered!|j},
-  meetupLink: Some("https://www.meetup.com/relay-meetup/events/274367568/"),
+  meetupLink: Some("https://www.meetup.com/relay-meetup/events/275945079/"),
   youtubeLink: None,
   content: [|
     Q_A({
