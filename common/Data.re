@@ -14,7 +14,7 @@ module AllParticipants = {
     twitter: Some("https://twitter.com/kassens"),
     github: "https://github.com/kassens",
     handle: "kassens",
-    work: "Facebook, Relay Core team",
+    work: "Facebook, Relay core team",
   };
 
   let zth = {
@@ -54,7 +54,7 @@ module AllParticipants = {
     twitter: Some("https://twitter.com/en_js"),
     github: "https://github.com/josephsavona",
     handle: "en_js",
-    work: "Facebook, Relay Core team",
+    work: "Facebook, Relay core team",
   };
 };
 
@@ -70,7 +70,7 @@ let meetup_2020_10_21 = {
   title: {j|Relay in production at Artsy, and updating the cache after mutations|j},
   desc: {j|In our first meetup ever, we'll dive deep into the history of Relay at [Artsy](https://www.artsy.net) with [Eloy Durán](https://twitter.com/alloy), formerly the Director of Engineering. We'll talk about Eloy's background, how Relay came to Artsy, onboarding new developers to Relay, and how the experience of using Relay at scale has been throughout the years.
 
-In our second segment of the meetup we'll dig into strategies for updating the cache after mutations in a panel discussion with [Jan Kassens](https://twitter.com/kassens) from the Relay Core team at Facebook, and Eloy again. We'll discuss simple as well as more complex scenarios, and what strategies have worked best in the long run for Facebook and Artsy - two very different applications.|j},
+In our second segment of the meetup we'll dig into strategies for updating the cache after mutations in a panel discussion with [Jan Kassens](https://twitter.com/kassens) from the Relay core team at Facebook, and Eloy again. We'll discuss simple as well as more complex scenarios, and what strategies have worked best in the long run for Facebook and Artsy - two very different applications.|j},
   meetupLink: Some("https://www.meetup.com/relay-meetup/events/273730799/"),
   youtubeLink: Some("https://www.youtube.com/watch?v=wLrityvveSQ"),
   content: [|
@@ -121,7 +121,7 @@ We'll also have [Liliana Matos](https://github.com/lilianammmatos) and [Rob Rich
       topic: "@defer and @stream",
       desc: {|Liliana Matos and Rob Richard from 1stdibs.com has championed adding the @defer and @stream directives to the official GraphQL specification. In this session we'll talk about what @defer and @stream are, why they're useful, how you use them with Relay, and how you can help out in testing the new directives.
 
-Joe Savona, from the Relay Core team at Facebook, will also be joining us for a discussion on how Facebook is using said directives.|},
+Joe Savona, from the Relay core team at Facebook, will also be joining us for a discussion on how Facebook is using said directives.|},
       participants: [|
         AllParticipants.lilianammatos,
         AllParticipants.robrichard,
@@ -139,21 +139,29 @@ let meetup_2021_02_04 = {
   date: {
     year: 2021,
     month: 1,
-    day: 4,
+    day: 10,
     hour: 19,
     minute: 0,
   },
   title: {j|Relay core team community Q&A|j},
-  desc: {j|On this meetup we're joined by [Joe Savona](https://github.com/josephsavona) from the Relay Core team, and we'll dedicate the entire meetup to a community Q&A.
+  desc: {j|This entire meetup is dedicated to a community Q&A with the Relay core team. We're joined by [Joe Savona](https://github.com/josephsavona) and a few more members of the Relay core team. Together we'll discuss and explore what the core team is up to and excited about in 2021. We'll also try and answer as many questions from the community as time allows.
 
-Got questions for the Q&A? Please [DM them to us on Twitter](https://twitter.com/RelayMeetup). Don't have Twitter? Join our [Discord](https://discord.gg/ft5cJmz) and PM me (Gabriel Nordeborn#8445) your questions there instead.|j},
+Here's a list of things we'll cover:
+- The Relay hooks API going stable in H1 2021
+- React Server Components + Relay
+- An open source release of the new Rust based Relay compiler
+- Relay IDE support (LSP) currently being worked on
+- Partial rendering (currently experimental)
+
+
+Got questions for the Q&A? Please [DM them to us on Twitter](https://twitter.com/RelayMeetup). Don't have Twitter? Join our [Discord](https://discord.gg/ft5cJmz) and PM me (Gabriel Nordeborn#8445) your questions there instead. We'll try and have as many questions as possible answered!|j},
   meetupLink: Some("https://www.meetup.com/relay-meetup/events/274367568/"),
   youtubeLink: None,
   content: [|
     Q_A({
       participants: [|AllParticipants.josephsavona|],
       topic: {|Community Q&A|},
-      desc: {|[Joe Savona](https://github.com/josephsavona) from the Relay core team at Facebook joins us for a Relay community Q&A.|},
+      desc: {|[Joe Savona](https://github.com/josephsavona) and a few more members of the Relay core team at Facebook joins us for a Relay community Q&A.|},
     }),
   |],
 

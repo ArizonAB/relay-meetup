@@ -67,3 +67,7 @@ p {
 .md-container a {
   @apply underline text-blue-500;
 }
+
+ul {
+  @apply list-disc pl-5 my-3;
+}
