@@ -10,10 +10,9 @@ type presentation = {
   presenter: participant,
   title: string,
   desc: string,
-  atTime: string,
 };
 
-type panelDiscussion = {
+type discussion = {
   participants: array(participant),
   topic: string,
   desc: string,
@@ -28,7 +27,9 @@ type interview = {
 
 type content =
   | Presentation(presentation)
-  | PanelDiscussion(panelDiscussion)
+  | PanelDiscussion(discussion)
+  | Q_A(discussion)
+  | Showcase(discussion)
   | Interview(interview);
 
 type date = {

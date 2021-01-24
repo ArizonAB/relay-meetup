@@ -32,6 +32,14 @@ let make = (~meetup: Types.meetupEvent) =>
                source={j|Check out the event on [YouTube]($youtubeLink) and [Meetup.com]($meetupLink).|j}
              />
            </div>
+         | (None, Some(meetupLink)) =>
+           <div className="mb-4 border-b border-gray-300">
+             <RenderMarkdown
+               source={j|**The YouTube link for the event will be posted just before the event starts here**.
+
+Check out the event on [Meetup.com]($meetupLink).|j}
+             />
+           </div>
          | _ => React.null
          }}
         <div className=""> <RenderMarkdown source={meetup.desc} /> </div>

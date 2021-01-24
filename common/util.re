@@ -11,6 +11,15 @@ let toTwoDigitStr = i =>
   | digit => digit->string_of_int
   };
 
+let dateIsGreaterThan = (date1: Types.date, date2: Types.date) => {
+  date1.year >= date2.year
+  && (
+    date1.month >= date2.month
+    || date1.month == date2.month
+    && date1.day >= date2.day
+  );
+};
+
 let eventHasPassed = (date: Types.date) => {
   let rightNow = Js.Date.make();
 
