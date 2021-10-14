@@ -156,7 +156,7 @@ Here's a list of things we'll cover:
 
 Got questions for the Q&A? Please [DM them to us on Twitter](https://twitter.com/RelayMeetup). Don't have Twitter? Join our [Discord](https://discord.gg/ft5cJmz) and PM me (Gabriel Nordeborn#8445) your questions there instead. We'll try and have as many questions as possible answered!|j},
   meetupLink: Some("https://www.meetup.com/relay-meetup/events/275945079/"),
-  youtubeLink: None,
+  youtubeLink: Some("https://www.youtube.com/watch?v=6wnlzz7q8So"),
   content: [|
     Q_A({
       participants: [|AllParticipants.josephsavona|],
