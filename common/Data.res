@@ -56,6 +56,14 @@ module AllParticipants = {
     handle: "en_js",
     work: "Facebook, Relay core team",
   }
+
+  let mattkrick = {
+    name: `Matthew Krick`,
+    twitter: Some("https://twitter.com/mattkrick"),
+    github: "https://github.com/mattkrick",
+    handle: "mattkrick",
+    work: "Parabol",
+  }
 }
 
 let meetup_2020_10_21 = {
@@ -161,7 +169,33 @@ Got questions for the Q&A? Please [DM them to us on Twitter](https://twitter.com
   hosts: [AllParticipants.zth],
 }
 
-let meetups = [meetup_2020_10_21, meetup_2020_12_03, meetup_2021_02_04]
+let meetup_2021_10_27 = {
+  id: "4",
+  date: {
+    year: 2021,
+    month: 9,
+    day: 27,
+    hour: 20,
+    minute: 0,
+  },
+  title: j`Relay at Parabol`,
+  desc: j`Join us as Matthew Krick from Parabol.co tells us about Parabol and their long time usage of Relay. 
+  
+For those who don't know Parabol, it's a VC backed open source first product that's probably the largest production code base featuring Relay that's also open source. We'll talk about how Parabol uses and has been using Relay and how it is to build professional software that's fully open source.`,
+  meetupLink: None,
+  youtubeLink: None,
+  content: [
+    Interview({
+      subject: AllParticipants.mattkrick,
+      interviewer: AllParticipants.zth,
+      topic: `Relay at Parabol.co`,
+      desc: `[Matthew Krick](https://github.com/mattkrick) joins us to talk about Relay at Parabol.co.`,
+    }),
+  ],
+  hosts: [AllParticipants.zth],
+}
+
+let meetups = [meetup_2020_10_21, meetup_2020_12_03, meetup_2021_02_04, meetup_2021_10_27]
 
 let getParticipants = meetup => {
   let participants: array<participant> = []
