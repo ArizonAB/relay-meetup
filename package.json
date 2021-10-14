@@ -19,15 +19,15 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "bsb -clean-world -make-world && next build",
-    "now-build": "bsb -clean-world -make-world && next build",
+    "build": "rescript build -with-deps && next build",
+    "now-build": "rescript build -with-deps && next build",
     "preexport": "npm run build",
     "export": "next export",
     "prestart": "npm run export",
     "start": "serve out",
-    "bs:build": "bsb -make-world",
-    "bs:clean": "bsb -clean-world",
-    "bs:start": "bsb -make-world -w"
+    "bs:build": "rescript build -with-deps",
+    "bs:clean": "rescript clean",
+    "bs:start": "rescript build -w"
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
