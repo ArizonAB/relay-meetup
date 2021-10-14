@@ -19,23 +19,10 @@ let make = () => <>
           {React.string(j`The Relay community, while fairly modest in size, is thriving, full of innovation, and as active as ever. This meetup is both a celebration of Relay, as well as a natural place for people using Relay to gather and share knowledge.`)}
         </p>
         <p>
-          {React.string(j`Every month we'll host an event filled with interesting and actionable content on using Relay. All events are fully remote, so anyone can join on equal terms from anywhere in the world.`)}
+          {React.string(j`Each meetup will feature content on Relay in some form, whether it's an interview, presentation or demo.`)}
         </p>
         <p>
-          {React.string(j`All events are broadcasted live on YouTube, and recorded so you can watch them at any time.`)}
-        </p>
-      </div>
-      <div className="pt-6">
-        <h3 className="text-xl"> {React.string("Presentations and interviews")} </h3>
-        <p>
-          {React.string(j`The first part of each meetup will feature presentations or interviews with members of the Relay community.`)}
-        </p>
-        <p>
-          {React.string(j`Presentations can be anything from explanations of concepts, to case studies of Relay usage in the wild, to live coding demos of interesting and cool things in and around Relay.`)}
-        </p>
-        <h3 className="text-xl mt-6"> {React.string("A hands-on theme")} </h3>
-        <p>
-          {React.string(j`The second part of each meetup will focus on a particular aspect of using Relay as hands-on as we can. Together with a panel of experienced Relay users, bringing invaluable industry expertise, we'll discuss best practices and surface valuable knowledge for solving the particular problem we're discussing.`)}
+          {React.string(j`All events are fully remote, so anyone can join on equal terms from anywhere in the world. They are broadcasted live on YouTube and recorded so you can watch them at any time.`)}
         </p>
       </div>
     </div>
