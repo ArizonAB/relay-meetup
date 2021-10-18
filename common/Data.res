@@ -182,7 +182,7 @@ let meetup_2021_10_27 = {
   desc: j`Join us as Matthew Krick from Parabol.co tells us about Parabol and their long time usage of Relay. 
   
 For those who don't know Parabol, it's a VC backed open source first product that's probably the largest production code base featuring Relay that's also open source. We'll talk about how Parabol uses and has been using Relay and how it is to build professional software that's fully open source.`,
-  meetupLink: None,
+  meetupLink: Some("https://www.meetup.com/relay-meetup/events/281505534"),
   youtubeLink: None,
   content: [
     Interview({

@@ -1,13 +1,13 @@
 const purgecss = require("@fullhuman/postcss-purgecss")({
   // Specify the paths to all of the template files in your project
   content: [
-    "./bindings/**/*.re",
-    "./common/**/*.re",
-    "./components/**/*.re",
-    "./layouts/**/*.re",
-    "./pages/**/*.re",
-    "./public/**/*.re",
-    "./styles/**/*.re",
+    "./bindings/**/*.res",
+    "./common/**/*.res",
+    "./components/**/*.res",
+    "./layouts/**/*.res",
+    "./pages/**/*.res",
+    "./public/**/*.res",
+    "./styles/**/*.res",
   ],
 
   whitelist: ["html", "body"],
